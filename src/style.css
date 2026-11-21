@@ -31,3 +31,20 @@
 .nav a:hover::after{transform:scaleX(1)}
 @media(max-width:700px){.visual-card{animation:cerpenDrift 7s ease-in-out infinite}.orbit-one,.orbit-two{animation-duration:110s}.chip-one,.chip-two{animation-duration:8s}}
 @media(prefers-reduced-motion:reduce){.hero-glow,.orbit,.visual-card,.chip-one,.chip-two,.dot,.chip-dot,.gradient-text{animation:none!important}.btn::after{display:none}}
+
+
+/* FAQ — minimal accordion */
+.faq-section{background:#0c0b11;border-top:1px solid #ffffff0d}
+.faq-section .section-head{max-width:750px}
+.faq-list{border-top:1px solid #30283a}
+.faq-item{border-bottom:1px solid #30283a;transition:background .25s}
+.faq-item:hover,.faq-item[open]{background:#15111d}
+.faq-item summary{display:flex;align-items:center;gap:22px;padding:25px 22px;cursor:pointer;list-style:none;outline-offset:-3px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-number{color:#9e79d8;font-family:'Space Grotesk',sans-serif;font-size:12px;flex:0 0 26px}
+.faq-question{flex:1;font-size:16px;font-weight:600;letter-spacing:-.2px}
+.faq-plus{font-family:'Space Grotesk',sans-serif;font-size:24px;line-height:1;color:#ad84f5;transition:transform .3s ease}
+.faq-item[open] .faq-plus{transform:rotate(45deg)}
+.faq-answer{padding:0 65px 25px;color:#a59bab;font-size:14px;line-height:1.85;max-width:820px}
+@media(max-width:700px){.faq-item summary{padding:20px 10px;gap:12px}.faq-question{font-size:14px}.faq-answer{padding:0 30px 20px 48px;font-size:13px}.faq-plus{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.faq-plus{transition:none}}
