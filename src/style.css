@@ -66,3 +66,14 @@
 .project-photo .preview-badge{z-index:3}
 @media(max-width:700px){.project-photo-copy{left:7%;max-width:78%;gap:12px}.project-photo-copy strong,.project-card:not(.featured) .project-photo-copy strong{font-size:clamp(25px,7vw,35px)}.project-photo-copy>span:first-child{font-size:9px}.project-photo-action{padding:10px 12px;font-size:9px}.project-photo .preview-badge{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.project-photo-img{transition:none}}
+
+
+/* CERPEN original vector logomark in hero */
+.visual-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;margin:9px auto 0;min-height:205px}
+.visual-logo-symbol{width:116px;height:93px;filter:drop-shadow(0 5px 22px #8c55ff65);transition:transform .45s ease}
+.visual-card:hover .visual-logo-symbol{transform:translateY(-5px) rotate(-3deg)}
+.visual-logo-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(42px,4vw,56px);letter-spacing:-.065em;line-height:1.15;color:#f8f4ff}
+.visual-logo-name span{color:#aa72ff}
+.visual-logo-subtitle{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:3px;color:#a78fca;font-weight:700;margin-top:8px}
+@media(max-width:700px){.visual-logo{min-height:180px;margin:0 auto}.visual-logo-symbol{width:100px;height:80px}.visual-logo-name{font-size:47px}.visual-logo-subtitle{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.visual-logo-symbol{transition:none}}
